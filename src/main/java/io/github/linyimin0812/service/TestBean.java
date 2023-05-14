@@ -10,6 +10,6 @@ import io.github.linyimin0812.async.annotation.AsyncInit;
 //@AsyncInit
 public class TestBean {
     public void init() throws InterruptedException {
-        Thread.sleep(10 * 1000);
+        Thread.sleep(20 * 1000);
     }
 }

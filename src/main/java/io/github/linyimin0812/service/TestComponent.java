@@ -10,12 +10,12 @@ import javax.annotation.PostConstruct;
  * @date 2023/05/13 20:37
  **/
 @Component
-@AsyncInit
+//@AsyncInit
 public class TestComponent {
 
     @PostConstruct
     public void init() throws InterruptedException {
-        Thread.sleep(10 * 1000);
+        Thread.sleep(20 * 1000);
     }
 
 }
