@@ -5,6 +5,8 @@ import io.github.linyimin0812.async.config.AsyncBeanProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import javax.annotation.Resource;
+
 /**
  * @author yiminlin
  * @date 2023/05/13 20:39
@@ -13,6 +15,7 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfiguration {
 
     @Bean(initMethod = "init")
+    @Resource
     public TestBean testBean(AsyncBeanProperties properties) {
         return new TestBean();
     }
