@@ -16,15 +16,16 @@
 <dependency>
     <groupId>io.github.linyimin0812</groupId>
     <artifactId>spring-async-bean-starter</artifactId>
-    <version>1.1.2</version>
+    <version>2.0.7</version>
 </dependency>
 ```
 
 2. application.properties文件中配置异步加载的bean
 
 ```properties
-java.profiler.boost.spring.async.asyncBeanPriorityLoadEnable=true
-java.profiler.boost.spring.async.beanNames=testBean,testComponent
+server.port=7002
+spring-startup-analyzer.boost.spring.async.bean-priority-load-enable=true
+spring-startup-analyzer.boost.spring.async.bean-names=testBean,testComponent,testBeanXml
 ```
 
 启动时长为20s
